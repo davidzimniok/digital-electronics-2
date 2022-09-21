@@ -9,7 +9,7 @@
 #define LED_OUT PB0   // PB0
 #define DOT 250 // Delay in milliseconds
 #define COMMA 750 // Delay in milliseconds
-#define PB0 8          // In Arduino world, PB5 is called "13"
+#define PB0 8  
 
 int main(void)
 {
