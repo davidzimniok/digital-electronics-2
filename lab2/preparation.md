@@ -8,7 +8,7 @@
    ![leds_conn](images/LED.png)
 &nbsp;
 
-2. [Calculate LED resistor value](https://electronicsclub.info/leds.htm) for typical LEDs. Let the LED current is 20 milli amps.
+2. Calculate LED resistor value for typical LEDs. Let the LED current is 20 milli amps.
 
 &nbsp;
    ![ohms law](images/LED_curr.png)
