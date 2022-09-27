@@ -12,6 +12,7 @@
 
 &nbsp;
    ![ohms law](images/LED_curr.png)
+   (example for green LED diode)
 &nbsp;
 
    | **LED color** | **Supply voltage** | **LED current** | **LED voltage** | **Resistor value** |
