@@ -42,7 +42,6 @@
 int main(void)
 {
     pinMode(LED_OUT, OUTPUT);
-
     // Infinite loop
     while (1)
     {
@@ -57,9 +56,6 @@ int main(void)
         digitalWrite(LED_OUT,HIGH);
         _delay_ms(COMMA);
         digitalWrite(LED_OUT,LOW);
-
-        
     }
-
     return 0;
 }
