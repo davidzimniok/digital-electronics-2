@@ -94,6 +94,7 @@ ISR(ADC_vect)
 {
     static uint16_t o_val=10000;
     uint16_t value;
+    float voltage;
     char string[4];  // String for converted numbers by itoa()
 
     // Read converted value
@@ -102,7 +103,8 @@ ISR(ADC_vect)
 
     if(o_val!=value){ 
         // Convert "value" to "string" and display it
-        sprintf(string,"%4d",value);
+        //sprintf(string,"%4d",value);
+        sprintf(string,"%4d",(uint16_t)((((float)value/(1023.0)))*5000.0));
         lcd_gotoxy(8, 0); lcd_puts(string);  // Put ADC value in decimal
         sprintf(string,"%3X",value);
         lcd_gotoxy(13,0); lcd_puts(string);  // Put ADC value in hexadecimal
