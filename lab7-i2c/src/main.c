@@ -34,6 +34,12 @@ struct Air_parameters_structure {
     uint8_t checksum;
 } air;
 
+struct time_struct {
+    uint8_t sec;
+    uint8_t min;
+    uint8_t hours;
+} tim;
+
 
 /* Function definitions ----------------------------------------------*/
 /**********************************************************************
@@ -92,30 +98,31 @@ ISR(TIMER1_OVF_vect)
     twi_write(0x00);
     twi_stop();
     twi_start(RTCA, TWI_READ);
-    rtime = twi_read_ack();
-    itoa(rtime,string,10);
-    uart_puts(string);
-    uart_puts("sec, ");
+    tim.sec = twi_read_nack();
     twi_stop();
     twi_start(RTCA, TWI_WRITE);
     twi_write(0x01);
     twi_stop();
     twi_start(RTCA, TWI_READ);
-    rtime = twi_read_ack();
-    itoa(rtime,string,10);
-    uart_puts(string);
-    uart_puts("mins, ");
+    tim.min = twi_read_nack();
     twi_stop();
     twi_start(RTCA, TWI_WRITE);
     twi_write(0x03);
     twi_stop();
     twi_start(RTCA, TWI_READ);
-    rtime = twi_read_ack();
-    itoa(rtime,string,10);
-    uart_puts(string);
-    uart_puts("hours \n\r");
+    tim.hours = twi_read_nack();
     twi_stop();
 
+
+    itoa(tim.hours,string,10);
+    uart_puts(string);
+    uart_puts(":");
+    itoa(tim.min,string,10);
+    uart_puts(string);
+    uart_puts(":");
+    itoa(tim.sec,string,10);
+    uart_puts(string);
+    uart_puts("\n\r");
     
    /* sla++;
 
