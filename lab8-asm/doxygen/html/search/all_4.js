@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['lab_208_3a_20combining_20c_20and_20assembly_20language_0',['Lab 8: Combining C and assembly language',['../md_preparation.html',1,'']]],
-  ['lab_208_3a_20david_20zimniok_1',['Lab 8: David Zimniok',['../md__r_e_a_d_m_e.html',1,'']]],
-  ['lab8_20assembly_20in_20c_20for_20arduino_2',['Lab8 assembly in C for Arduino',['../index.html',1,'']]],
+  ['lab_208_0',['Lab 8',['../index.html',1,'']]],
+  ['lab_208_3a_20combining_20c_20and_20assembly_20language_1',['Lab 8: Combining C and assembly language',['../md_preparation.html',1,'']]],
+  ['lab_208_3a_20david_20zimniok_2',['Lab 8: David Zimniok',['../md__r_e_a_d_m_e.html',1,'']]],
   ['lcd_20definitions_20_3clcd_5fdefinitions_2eh_3e_3',['LCD Definitions &lt;lcd_definitions.h&gt;',['../group__fryza__lcd.html',1,'']]],
   ['lcd_20library_20_3clcd_2eh_3e_4',['LCD library &lt;lcd.h&gt;',['../group__pfleury__lcd.html',1,'']]],
   ['lcd_2eh_5',['lcd.h',['../lcd_8h.html',1,'']]],
